@@ -11,6 +11,21 @@ body{
     margin-top: 50px;
 }
 
+/* Diseño para pantallas medianas */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* 2 columnas */
+    }
+}
+
+/* Diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+
+}
+
 header {
     text-align: center;
     border: 1px solid black;
@@ -61,8 +76,8 @@ header {
     width: 4%;
     padding: 15px;
     position: fixed;
-    left: 95%;
-    top: 90%;
+    right: 20px; /* Se coloca a 20px del borde derecho */
+    bottom: 20px; /* Se coloca a 20px del borde inferior */
     background-color: rebeccapurple;
     color: white;
 }
